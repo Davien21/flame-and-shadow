@@ -1,0 +1,105 @@
+* {
+	overflow-wrap: anywhere;
+}
+body {
+	/*background-color: #000;*/
+	/*background: linear-gradient(-65deg, #43C6AC, #F8FFAE);*/
+}
+.no-responsive {
+	width: 60%;
+}
+main {
+	margin: 20% auto 5%;
+	position: relative;
+}
+.title-div {
+	background-color: darkgray;
+    background-color: antiquewhite;
+}
+.slider-progress {
+	z-index: -1;
+	width: 50%;
+	height: 5px;
+	background-color: #2196F3;
+	border-radius: 3px;
+}
+.player-body {
+	/*background-color: #FFFFFF;*/
+}
+.def-slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	outline: none;
+	background-color: #D8D8D8;
+	border-radius: 30px;
+	cursor: pointer;
+}
+.volume-slider-div {
+	display: none;
+	width: 60px;
+	max-width: 60px;
+}
+.def-slider::-webkit-slider-thumb,.def-slider::-moz-range-thumb  {
+	-webkit-appearance: none;
+  	appearance: none;
+	outline: none;
+	border:none;
+	background: #2196F3;
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+	/*z-index: 3;*/
+	border-radius: 50%;
+}
+.ie-slider {
+	cursor: pointer;
+	margin-top: 17.5px;
+}
+ .paper-box {
+	border-radius: 12px;
+	box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+	background-color: #fff;
+}
+.paper-box-shadow {
+	box-shadow: 0 6px 10px -4px rgba(0,0,0,.15);
+}
+.tiny-svg {
+	width: 15px;
+	height: 15px;
+	/*margin-top: -8px;*/
+	cursor: pointer;
+}
+@media screen and (max-width:399px) {
+	main {
+		width: 90%;
+	}
+}
+@media screen and (min-width:400px) {
+	main {
+		margin: 40% auto 5%;
+		width: 80%;
+	}
+}
+@media screen and (min-width:576px) {
+	main {
+		margin: 30% auto 5%;
+		width: 50%;
+	}
+}
+@media screen and (min-width:768px) {
+	main {
+		margin: 20% auto 5%;
+		width: 40%;
+	}
+}
+@media screen and (min-width:992px) {
+	main {
+		width: 30%;
+	}
+}	
+@media screen and (min-width:1200px) {
+	main {
+		width: 25%;
+	}
+}

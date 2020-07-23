@@ -1,0 +1,716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flame and Shadow</title>
+
+
+
+
+
+<style type="text/css">
+<!--
+body {
+	margin: 0;
+	padding: 0;
+	color:#FFF;
+	background-color: #540507;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.header {
+	height: 150px;
+	/* [disabled]border-bottom-color: #950000; */
+	/* [disabled]border-bottom-style: dotted; */
+	/* [disabled]border-bottom-width: thin; */
+	top: 0px;
+	position: relative;
+	left: 0px;
+}
+
+
+.banner 
+{
+	width: 970px;
+	height: 83px;
+	left: 0px;
+	position: absolute;
+	top: 79px;
+}
+
+
+.banner_bottom
+{
+	width: 1020px;
+	height: 28px;
+	left: -35px;
+	position: relative;
+	top: -25px;
+}
+
+
+
+
+/* ~~ The footer styles ~~ */
+.footer {
+	padding: 10px 0;
+	position: absolute;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	background-color:fff;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	margin-top: 30px;
+	top: 387px;
+	left: -1px;
+	width: 970px;
+	text-align: center;
+}
+
+
+
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+
+
+.container {
+	width: 962px;
+	margin: 0 auto;
+	height: 600px;
+	border: solid #B90000 thin;
+	background-color: #FFF;
+	background-size: cover;
+	top: 0px;
+	background-position-y: 10;
+	border-left-color: #ccc;
+	border-left-style: double;
+	/* [disabled]border-right-color: #ccc; */
+	border-right-style: double;
+	border-bottom-color: #D00;
+	border-bottom-width: 30px;
+	border-bottom-style: solid;
+}
+
+.content {
+	width: 962px;
+	margin: 0 auto;
+	top: 110px;
+	position: relative;
+	left: 0px;
+	height: 400px;
+	background-color: #FFF;
+}
+
+.title
+{
+	width: 516px;
+	height: 80px;
+	padding:0;
+	left: -5px;
+	top: 80px;
+	font-family:Vivaldi;
+	font-size:80px;
+	color: #FFF;
+	width: 970px;
+	position: absolute;
+}
+
+
+.logo
+{
+	12height:130px;
+	position:absolute;
+	top:0;
+	top: 3px;
+	width: 105px;
+	left: 11px;
+	height: 71px;
+}
+
+
+.rs
+{
+	font-family:Vivaldi;
+	font-size:55px;
+	color: #FFF;
+	width: 300px;
+	position: absolute;
+	left: 57px;
+	top: 9px;
+	height: 61px;
+}
+
+.subtitle
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:28px;
+	color: #FFF;
+	/* [disabled]float: left; */
+	left: -4px;
+	width: 970px;
+	position: absolute;
+	top: 178px;
+	height: 50px;
+}
+
+.newsletter_signup
+{
+	position:absolute;
+	top:-55px;
+	padding-right:5px;
+	width: 166px;
+	left: 331px;
+	height: 25px;
+	padding: 10px 5px 5px 5px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #Ca0000;
+	text-decoration: none;
+}
+
+a:link {
+	color: #D00;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #D00;
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #F60;
+}
+
+
+#navcontainer1
+{
+	position:absolute;
+	top:15px;
+	left: 191px;
+	width: 620px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#navlist ul
+{
+	align: left;
+	margin: 0;
+	white-space: nowrap;
+	padding: 0;
+	/* [disabled]font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+}
+
+#navlist li
+{
+	font-size: 14px;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	display: inline;
+	list-style-type: none;
+	font-style: normal;
+}
+
+#navlist a
+{
+	padding-right: 30px;
+}
+
+#navlist a:link, #navlist a:visited
+{
+	color: #CA0000;
+	text-decoration: none;
+	
+}
+
+#navlist a:hover
+{
+	color: #F60;
+	;
+}
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo. ~~ */
+
+.page_title {
+	text-align:left;
+	position:absolute;
+	top:-25px;
+	left:6px;
+	font-size: 36px;
+	color: #333;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.column1 {
+	position: absolute;
+	height: 505px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #414141;
+	font-size: 12px;
+	font-stretch: wider;
+	width: 481px;
+	line-height: 16px;
+	margin-left: 2px;
+	border-right-color: #CCC;
+	border-right-style: double;
+	border-bottom-color: #CCC;
+	border-bottom-style: double;
+}
+
+.column2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #414141;
+	font-size: 12px;
+	font-stretch: wider;
+	width: 545px;
+	text-align: justify;
+	width: 429px;
+	position: absolute;
+	float: none;
+	top: 0px;
+	left: 491px;
+	padding-top: 7px;
+	padding-top: 3px;
+	padding-left: 5px;
+	border-bottom-color: #CCC;
+	border-bottom-style: double;
+	border-left-color: #CCC;
+	border-left-style: double;
+	height: 429px;
+}
+
+.column1_title
+{
+	width:470px;
+	height: 24px;
+	position: relative;
+	left: 3px;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #F60;
+	text-align:right;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	border-bottom-color: #CCC;
+	border-bottom-style: double;
+	border-bottom-width: thin;
+	margin-bottom: 8px;
+}
+
+
+.column2_title
+{
+	width:432px;
+	height: 24px;
+	position: absolute;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	color: #F60;
+	border-bottom-color: #CCC;
+	border-bottom-style: double;
+	border-bottom-width: thin;
+	left: 2px;
+	top: 1px;
+	margin-bottom: 8px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+
+.group_photo1
+{
+	position: absolute;
+	width: 284px;
+	height: 395px;
+	top: 40px;
+	margin-left: 3px;
+}
+
+
+.text_block1
+{
+	padding-left: 5px;
+	position: absolute;
+	width: 690px;
+	height: 424px;
+	left: 224px;
+	padding-right: 10px;
+	top: 19px;
+	font-size: 12px;
+	color: #333;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 13pt;
+	text-align: justify;
+}
+
+.text_block2
+{
+	padding-left: 5px;
+	position: absolute;
+	width: 459px;
+	height: 45px;
+	left: -1px;
+	padding-right: 10px;
+	top: 456px;
+	font-size: 13px;
+}
+
+
+
+.page_title1 {
+	font-family: "Segoe UI";
+	text-align:left;
+	position:absolute;
+	top:65px;
+	left:434px;
+	font-size: 25px;
+	color: #333;
+}
+
+.page_title2 {
+	font-family: "Segoe UI";
+	text-align:left;
+	position:absolute;
+	top:45px;
+	left:536px;
+	font-size: 36px;
+	color: #333;
+}
+
+.line1
+{
+	position:absolute;
+	width: 800px;
+	border-bottom-color: #CCC;
+	border-bottom-style: groove;
+	border-bottom-width: thin;
+}
+
+.line2
+{
+	position:absolute;
+	width: 800px;
+	border-bottom-color: #CCC;
+	border-bottom-style: groove;
+	border-bottom-width:thin;
+}
+
+/*event_ BLOCK STYLES*/
+.event_block
+{
+	position:relative;
+	padding:0;
+	top:20px;
+	left:-5px;
+}
+
+.event_poster
+{
+	width: 117px;
+	height: 111px;
+	left: 0px;
+	margin-left: 0px;
+	filter: shadow;
+}
+
+
+.shadow 
+{
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	left: 30px;
+	top: 18px;
+	height: 423px;
+}
+
+.newsletter_button
+{
+	position: absolute;
+	height: 25px;
+	left: 838px;
+	top: 24px;
+	font-size: 15px;
+	color: #ca0000;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #DFDFDF;
+	padding: 9px 0px 0px 9px;
+	width: 100px;
+}
+
+.event_title
+{
+	float:inherit;
+	font-style:normal;
+	color: #900;
+	position: absolute;
+	top: 41px;
+	margin-left: 121px;
+	padding-left: 10px;
+	left: 135px;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	height: 29px;
+	width: 165px;
+}
+
+.event_description
+{
+	float:inherit;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #900;
+	position: absolute;
+	top: 243px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	width: 153px;
+	line-height: 17px;
+	left: 3px;
+	height: 110px;
+}
+
+
+.event_description2
+{
+	float:inherit;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #414141;
+	position: absolute;
+	top: 348px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	width: 410px;
+	line-height: 17px;
+	left: 43px;
+}
+
+
+
+
+.event_reviews
+{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style:italic;
+	color: #414141;
+	position: absolute;
+	top: 75px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 250px;
+	left: 177px;
+	padding-right: 3px;
+}
+
+.event_info
+{
+	position:absolute;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	left: 7px;
+	top: 252px;
+}
+
+
+.form
+{
+	position:absolute;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	top: 147px;
+	width: 621px;
+	left: 325px;
+	height: 257px;
+}
+
+.cdbuy
+{
+	position:absolute;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	left: 101px;
+	top: 252px;
+	text-decoration: none;
+}
+
+.event_info a:active, .cdbuy a:active, .event_info a:visited, .cdbuy a:visited
+{
+	text-decoration:none;
+}
+
+.event_info p, .cdbuy p 
+{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #B90000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+
+
+.container #navcontainer #navlist li a {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.container .column1 p {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.column2 h2 {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.column1 h2 {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.column1 h1 {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.event_title p strong {
+	color: #B90000;
+}
+.container .content {
+	color: #333;
+}
+.container .content .form form div div #lnk100 {
+	color: #FFF;
+}
+
+
+-->
+</style></head>
+
+<body>
+
+
+<div class="container">
+  
+<div class="header">
+	    	
+<div class="logo"><img src="images/logo.png" height="70" width="97" />     </div>
+
+    <div class="banner"><img src="images/red2.jpg" align="center" alt="banner" width="961" height="174" />      </div>
+      
+<div class="title" align="left">
+    <p align="center">Flame and Shadow</p>  </div>
+    
+    <div class="subtitle" align="left">
+      <p align="center">The Passion and Pain of Sara Teasdale</p>
+    </div>
+  
+    <div id="navcontainer1" align="left">
+	<ul id="navlist">
+		
+        <li><a href="http://www.flameandshadowopera.com/index.html"><strong>HOME</strong></a></li>
+		
+        <li><a href="http://www.flameandshadowopera.com/creators.html"><strong>CREATORS</strong></a></li>
+		
+       <li><a href="http://www.flameandshadowopera.com/music.html"><strong>MUSIC</strong></a></li>
+       
+       
+        
+		<li><a href="http://www.flameandshadowopera.com/performances.html"><strong>PERFORMANCES</strong></a></li>
+	  	
+        
+        
+        <li><a href="http://www.flameandshadowopera.com/links.html"><strong>LINKS</strong></a></li>
+       
+	   
+        <li><a href="mailto:music@nikaleonimusic.com"><strong>CONTACT</strong></a></li>
+	</ul>
+  </div>
+
+<!--end of navcontainer1-->   
+      
+  <div class="newsletter_button" filter:shadow(color: #929292);"><a href="http://www.flameandshadowopera.com/mailing_list.html"><p>MAILING LIST</p></a></div>
+  
+    <!--end of newsletter_signup-->
+      
+      
+  </div> 
+
+  <!-- end .header -->
+  
+ 
+  <div class="content">
+   
+   <div class="page_title1">MUSIC</div>
+   <br /><br /><br />      <br /><br /><br />
+   
+   <p align="center">Demo audio tracks are coming soon!</p>
+   
+   
+   
+   
+   
+   <div class="footer">
+     
+     <p align="center">
+©2020 Nika Leoni</p>
+
+
+
+</div>
+
+
+<!-- end .footer -->
+   
+  
+ </div><!-- end .content --> 
+
+
+  </div><!--end of .content-->
+  <!-- end .container -->
+
+</div>
+</body>
+</html>

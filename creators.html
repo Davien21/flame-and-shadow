@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flame and Shadow</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% 1/4 Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color:#333;
+	background-color: #fff;
+}
+
+.header {
+	height: 150px;
+	/* [disabled]border-bottom-color: #950000; */
+	/* [disabled]border-bottom-style: dotted; */
+	/* [disabled]border-bottom-width: thin; */
+	top: 0px;
+	position: relative;
+	left: 0px;
+}
+
+
+.banner 
+{
+	width: 970px;
+	height: 83px;
+	left: 0px;
+	position: absolute;
+	top: 79px;
+}
+
+
+
+
+/* ~~ The footer styles ~~ */
+.footer {
+	position: absolute;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	text-align: center;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	margin-top: 30px;
+	top: 727px;
+	left: -6px;
+	width: 969px;
+}
+
+
+
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+
+
+.container {
+	width: 962px;
+	margin: 0 auto;
+	height: 1000px;
+	border: solid #B90000 thin;
+	background-color: #FFF;
+	background-size: cover;
+	top: 0px;
+	background-position-y: 10;
+	border-left-color: #ccc;
+	border-left-style: double;
+	/* [disabled]border-right-color: #ccc; */
+	border-right-style: double;
+	border-bottom-color: #D00;
+	border-bottom-width: 40px;
+	border-bottom-style: solid;
+}
+
+.content {
+	width: 962px;
+	margin: 10 30 auto 30;
+	top: 110px;
+	position: relative;
+	left: 0px;
+	height: 750px;
+	background-color: #FFF;
+	/* [disabled]padding-left: 30px; */
+	/* [disabled]padding-right: 30px; */
+}
+
+.title
+{
+	width: 516px;
+	height: 80px;
+	padding:0;
+	left: -5px;
+	top: 80px;
+	font-family:Vivaldi;
+	font-size:80px;
+	color: #FFF;
+	width: 970px;
+	position: absolute;
+}
+
+
+.logo
+{
+	12height:130px;
+	position:absolute;
+	top:0;
+	top: 3px;
+	width: 105px;
+	left: 11px;
+	height: 71px;
+}
+
+
+.rs
+{
+	font-family:Vivaldi;
+	font-size:55px;
+	color: #FFF;
+	width: 300px;
+	position: absolute;
+	left: 57px;
+	top: 9px;
+	height: 61px;
+}
+
+.subtitle
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:28px;
+	color: #FFF;
+	/* [disabled]float: left; */
+	left: -4px;
+	width: 970px;
+	position: absolute;
+	top: 178px;
+	height: 50px;
+}
+
+.newsletter_signup
+{
+	position:absolute;
+	top:-55px;
+	padding-right:5px;
+	width: 166px;
+	left: 331px;
+	height: 25px;
+	padding: 10px 5px 5px 5px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #Ca0000;
+	text-decoration: none;
+}
+
+a:link {
+	color: #D00;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #D00;
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #F60;
+}
+
+
+#navcontainer1
+{
+	position:absolute;
+	top:15px;
+	left: 191px;
+	width: 620px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#navlist ul
+{
+	align: left;
+	margin: 0;
+	white-space: nowrap;
+	padding: 0;
+	/* [disabled]font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+}
+
+#navlist li
+{
+	font-size: 14px;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	display: inline;
+	list-style-type: none;
+	font-style: normal;
+}
+
+#navlist a
+{
+	padding-right: 30px;
+}
+
+#navlist a:link, #navlist a:visited
+{
+	color: #CA0000;
+	text-decoration: none;
+	
+}
+
+#navlist a:hover
+{
+	color: #F60;
+	;
+}
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo. ~~ */
+
+.page_title {
+	text-align:left;
+	position:absolute;
+	top:-25px;
+	left:6px;
+	font-size: 36px;
+	color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+.text_block1
+{
+	padding-left: 5px;
+	position: absolute;
+	width: 882px;
+	height: 424px;
+	left: 32px;
+	padding-right: 10px;
+	top: 19px;
+	font-size: 12px;
+	color: #333;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 13pt;
+	text-align: justify;
+}
+
+.text_block2
+{
+	padding-left: 5px;
+	position: absolute;
+	width: 459px;
+	height: 45px;
+	left: -1px;
+	padding-right: 10px;
+	top: 456px;
+	font-size: 13px;
+}
+
+
+
+
+
+.line1
+{
+	position:absolute;
+	width: 800px;
+	border-bottom-color: #CCC;
+	border-bottom-style: groove;
+	border-bottom-width: thin;
+}
+
+.line2
+{
+	position:absolute;
+	width: 800px;
+	border-bottom-color: #CCC;
+	border-bottom-style: groove;
+	border-bottom-width:thin;
+}
+
+
+.shadow 
+{
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	left: 48px;
+	top: 32px;
+	height: 423px;
+	float: right;
+}
+
+.newsletter_button
+{
+	position: absolute;
+	height: 25px;
+	left: 838px;
+	top: 24px;
+	font-size: 15px;
+	color: #ca0000;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #DFDFDF;
+	padding: 9px 0px 0px 9px;
+	width: 100px;
+}
+
+.event_description
+{
+	float:inherit;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #900;
+	position: absolute;
+	top: 243px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	width: 153px;
+	line-height: 17px;
+	left: 3px;
+	height: 110px;
+}
+
+
+.event_description2
+{
+	float:inherit;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #414141;
+	position: absolute;
+	top: 348px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	width: 410px;
+	line-height: 17px;
+	left: 43px;
+}
+
+
+
+
+.event_reviews
+{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style:italic;
+	color: #414141;
+	position: absolute;
+	top: 75px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 250px;
+	left: 177px;
+	padding-right: 3px;
+}
+
+.event_info
+{
+	position:absolute;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	left: 7px;
+	top: 252px;
+}
+
+.cdbuy
+{
+	position:absolute;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	left: 101px;
+	top: 252px;
+	text-decoration: none;
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+
+
+.page_title1 {
+	font-family: "Segoe UI";
+	text-align:left;
+	position:absolute;
+	top:17px;
+	left:359px;
+	font-size: 25px;
+	color: #333;
+}
+
+.page_title2 {
+	font-family: "Segoe UI";
+	text-align:left;
+	position:absolute;
+	top:45px;
+	left:536px;
+	font-size: 36px;
+	color: #333;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+
+
+.container #navcontainer #navlist li a {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.container .content p {
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 15pt;
+	text-align: justify;
+	font-size: 12px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+-->
+</style></head>
+
+<body>
+
+
+<div class="container">
+  
+<div class="header">
+	    	
+<div class="logo"><img src="images/logo/logo.png" height="47" width="57" />     </div>
+
+    <div class="banner"><img src="images/red2.jpg" align="center" alt="banner" width="961" height="174" />      </div>
+      
+<div class="title" align="left">
+    <p align="center">Flame and Shadow</p>  </div>
+    
+    <div class="subtitle" align="left">
+      <p align="center">The Passion and Pain of Sara Teasdale</p>
+    </div>
+  
+    <div id="navcontainer1" align="left">
+	<ul id="navlist">
+		
+        <li><a href="http://www.flameandshadowopera.com/index.html"><strong>HOME</strong></a></li>
+		
+        <li><a href="http://www.flameandshadowopera.com/creators.html"><strong>CREATORS</strong></a></li>
+		
+       <li><a href="http://www.flameandshadowopera.com/music.html"><strong>MUSIC</strong></a></li>
+       
+       
+        
+		<li><a href="http://www.flameandshadowopera.com/performances.html"><strong>PERFORMANCES</strong></a></li>
+	  	
+        
+        
+        <li><a href="http://www.flameandshadowopera.com/links.html"><strong>LINKS</strong></a></li>
+       
+	   
+        <li><a href="mailto:music@nikaleonimusic.com"><strong>CONTACT</strong></a></li>
+	</ul>
+  </div>
+
+<!--end of navcontainer1-->   
+      
+  <div class="newsletter_button" filter:shadow(color: #929292);"><a href="http://www.flameandshadowopera.com/mailing_list.html"><p>MAILING LIST</p></a></div>
+  
+    <!--end of newsletter_signup-->
+      
+      
+  </div> 
+
+  <!-- end .header -->
+  
+ 
+  <div class="content"><BR><br><br>
+   
+   <div class="page_title1">ABOUT THE CREATORS</div>
+   
+   
+ <img src="images/nl.jpg" width="132" height="168" align="left" HSPACE="20" VSPACE="23" />
+ 
+<br>
+<p>
+Nika Leoni, a Russian-born Composer and Soprano, has been praised to show "a distinctive talent of drawing profound musical expression from dramatic context." Her diverse cultural and musical background enriches her style and empowers her versatility as a creative composer in numerous musical genres, including opera, vocal and chamber music, as well as in scoring for theater, dance, and film. Characterized by critics as "an exceptionally talented composer and singer, with triumphant femininity manifest in her music as well as her appearance," Nika has connected with her audiences by performing her own vocal compositions. Nika's performance of her operatic soliloquy <em>Euridice </em>was recently broadcast on WCNY (New York), KNVC (Nevada), and DelMarVa Public Radio (Maryland) as part of Foxtales and Fables on Feminine Fusion show. She was also invited to present <em>Euridice </em>at the Opera America Center in New York as part of the Ladies First performance project (2016). Her song cycle <em>Six Love Songs by Sara Teasdale </em>was performed at Poetry and Song Program at Mississippi State University's Department of Music (2019), as well as premiered at KC VITAs 2017 Summer Series and the 2016 Calliope's Call Concert Series. Latest commissions included two <em>Italian Christmas Carols </em>written for Christmas on the Hill Concert and performed at St. Ambrose Church in St. Louis with The Women's HOPE Chorale of St. Louis, as well as the music score for an independent full feature film, for which she also composed, recorded, and produced the feature song. Nika's album of her own arrangements of Russian Romances, titled <em>Dark Eyes </em>and released on Larion Records™, received high critical acclaim and is sold in music stores worldwide.  As a classical singer, Nika appeared on opera stages in the Czech Republic, Germany, Austria, and the USA, performed concerts at Munich Philharmonie, Berlin Philharmonie, Wałbrzych Filharmonia Sudecka (Poland), Carnegie Hall (New York), as well as recorded with Prague Stern Orchestra (Czech Republic). She was a Regional Finalist in the Metropolitan Opera National Council Auditions and has received First Prizes and Awards from a number of prestigious singing competitions. More information, music, and reviews can be found at <a href="http://www.nikaleoni.com">www.nikaleoni.com</a>. </p>
+
+
+
+
+
+
+<hr style="color:#D00">
+
+     <img src="images/kf.jpg" width="132" height="156" align="left" HSPACE="20" VSPACE="23" /><br>
+   
+   <p>Kathryn Favazza is an American Soprano, Producer, Librettist and Co-Founder of Make Music St. Louis, Inc.  
+
+Kathryn has performed many lead roles to high acclaim including Gilda (<em>Rigoletto</em>), Lucia (<em>Lucia di Lammermoor</em>), Adina (<em>L'Elisir d'amore</em>), Violetta (<em>La Traviata</em>) with various opera companies throughout New York, New Jersey and Washington, D.C.  She has appeared as a featured concert soloist across the country in venues such as Carnegie Hall, NY and the Sheldon Concert Hall, St. Louis.  Kathryn's concert repertoire includes Handel's <em>Messiah</em>, Fauré's <em>Requiem</em>, <em>St. John Passion </em>and <em>St. Matthew Passion </em>(Bach) and more. As a Producer, Kathryn has brought opera performances and programmed concerts (including benefit concerts) with much success to theaters in New York, St. Louis and Washington D.C. areas.  In her capacity as Co-Founder of Make Music St. Louis, Inc., she helps bring the annual worldwide Make Music Day celebration to the St. Louis area.  As a part of that festival, Kathryn is instrumental in implementing the Make Music Pianos Project in St. Louis, for which she engages local artists to paint and design "End of Life" pianos which are installed throughout the St. Louis area in an effort to expose the community to real musical instruments while bringing awareness to the festival.  In 2020, Make Music St. Louis, Inc. will celebrate its 5th Make Music Day.  Kathryn resides in St. Louis with her husband and two daughters.</p>
+  
+   
+   
+   
+   
+   
+   
+    <div class="footer" align="center">
+           
+©2020 Nika Leoni</p>
+
+
+
+</div>
+
+
+<!-- end .footer -->
+   
+  
+</div><!-- end .content --> 
+
+
+
+</div><!-- end .container -->
+
+</div>
+</body>
+</html>
