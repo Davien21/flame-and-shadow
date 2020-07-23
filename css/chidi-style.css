@@ -12,9 +12,7 @@
 }
 ul,ol {
 	list-style: none;
-}
-header{
-
+	margin: 0;padding: 0;
 }
 .curled-h1 {
 	font-size: 80px;
@@ -33,16 +31,29 @@ h3.banner {
 .font-trebuchet {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-	.red-orange-gradient {
-	    background: linear-gradient(315deg,rgb(155, 0, 0),35%, rgb(219, 0, 0), 85%, #f8ff1152);
+.red-orange-gradient {
+    background: linear-gradient(315deg,rgb(155, 0, 0),35%, rgb(219, 0, 0), 85%, #f8ff1152);
 }
- 
-@media screen and (max-width:399px) {
-	 
+.bg-red {
+	/*background-color: #DD0000;*/
+}
+.body-wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex:1;
+}
+footer {
+	/*color: white;*/
+	font-size: 0.9rem;
+	/*background-color: #DD0000;*/
+}
+/*@media screen and (max-width:399px) {
 }
 @media screen and (min-width:400px) {
-	 
-}
+}*/
 @media screen and (min-width:576px) {
 	header h1.banner {
 		font-size: 60px !important;
@@ -52,6 +63,9 @@ h3.banner {
 	}
 }
 @media screen and (min-width:768px) {
+	.player-body > div{
+		max-width: 392px !important;
+	}
 }
 @media screen and (min-width:992px) {
 	header h1.banner {
@@ -61,6 +75,5 @@ h3.banner {
 		font-size: 25px !important;
 	}
 }	
-@media screen and (min-width:1200px) {
-
-}
+/*@media screen and (min-width:1200px) {
+}*/

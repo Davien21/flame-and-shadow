@@ -7,142 +7,121 @@
 		<title>Flame and Shadow</title>
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./css/audio.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/chidi-style.css">
 
 	</head>
-	<body>
-		<div class="containernt">
-			<!-- Wrap page here to present another view with default setting -->
+	<body class="d-flex flex-column">
+		<div class="body-wrapper">
+			<header class="">
+				<nav class="navbar navbar-light navbar-expand-md bg-light ">
+					<div class="container-fluid px-md-0 px-lg-3">
+						<a href="./index.html" class="navbar-brand col-auto" >
+							<div class="logo">
+								<img src="images/logo/logo.png" height="47" width="57" />     
+							</div>
+						</a>
+						<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu_div" id="toggle-btn">
+			    			<span class="navbar-toggler-icon"></span>
+			  			</button>
+			  			<div class="collapse navbar-collapse text-center justify-content-between" id="nav-menu_div">
+			  				<!-- <div class="row ml-aut "> -->
+			  					<div class="col-lg-9 ml-lg-auto">
+			  						<ul class="navbar-nav justify-content-around">
+					  					<li class="nav-item  active ">
+					  						<a class="nav-link" href="./index.html"><strong>HOME</strong></a>
+					  					</li>
+					  					<li class="nav-item px-lg-3">
+					  						<a class="nav-link" href="./creators.html"><strong>CREATORS</strong></a>
+					  					</li>
+					  					<li class="nav-item ">
+					  						<a class="nav-link" href="./music.html"><strong>MUSIC</strong></a>
+					  					</li>
+					  					<li class="nav-item px-lg-3">
+					  						<a class="nav-link" href="./performances.html"><strong>PERFORMANCES</strong></a>
+					  					</li>
+					  					<li class="nav-item pr-lg-3">
+					  						<a class="nav-link" href="./links.html"><strong>LINKS</strong></a>
+					  					</li>
+										<li class="nav-item ">
+											<a class="nav-link" href="mailto:music@nikaleonimusic.com"><strong>CONTACT</strong>
+											</a>
+										</li>
+					  				</ul>
+			  					</div>
+								<div class="col-auto mail-list-btn">
+									<a class="nav-link " href="./mailing_list.html">
+										<span class="content-box">MAILING LIST</span>
+									</a>
+								</div>
+			  				<!-- </div> -->
+			  				
+			  			</div>
+					</div>
+				</nav>
+			</header>
+			<main class="">
+				<section id="head-section">
+					<div class="container-fluid">
+						<div class="row m y-5">
+							<div class="col px-0 m y-5">
+								<header class="red-orange-gradient py-5 text-center text-white">
+									<h1 class="banner font-vivaldi">Flame and Shadow</h1>
+									<h3 class="banner font-trebuchet">The Passion and Pain of Sara Teasdale</h3>
+								</header>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="middle-section">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col my-4 text-center">
+								<h4>MUSIC</h4>
+						      	<p>Flame and Shadow is a work in progress.  
+						      		Music excerpts will be posted here as they get completed.
+						      	</p>
+						    </div>
+						</div>
+					</div>
+				</section>
+				<section id="audio-player-section">
+					<div class="container-fluid">
+						<div class="player-body row ">
+							<div class="col-auto mx-auto bg-white rounded paper-box-shadow">
+								<div class="row pt-2 pb-3 bg- rounded-top title-div">
+									<!-- <marquee width="60%" scrollDelay="200">  -->
+										<small class="track-title px-3">
+											Press Play
+										</small>
+									<!-- </marquee>  -->
+								</div>
+								<div class="row py-3">
+									<div class="col-auto d-flex align-items-center play-btn " >
+										<img class="tiny-svg " src="./assets/imgs/play.svg">
+									</div>
+									<div class="d-flex px-0 col align-items-center">
+										<small class="col-auto current-time px-2 px-sm-3">0:00</small>
+										<div class="col px-0 slider-container d-flex align-items-center">
+											<input class="audio-slider def-slider" type="range" min="0" max="100" value="0">
+										</div>
+										<small class="col-auto duration px-2 px-sm-3">0:00</small>
+									</div>
+									<div class="d-flex">
+										<div class="volume-btn col-auto d-flex align-items-center"  >
+											<img class="tiny-svg" src="./assets/imgs/volume.svg">
+										</div>
+										<div class="volume-slider-div px-2 align-items-center">
+											<input class="volume-slider def-slider" type="range" min="0" max="100" value="100">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="bg-red text-center py-1">@ 2020 Nika Leoni</footer>
 		</div>
-		<header>
-			<nav class="navbar navbar-light navbar-expand-md bg-light ">
-				<div class="container-fluid px-md-0 px-lg-3">
-					<a href="./index.html" class="navbar-brand col-auto" >
-						<div class="logo">
-							<img src="images/logo/logo.png" height="47" width="57" />     
-						</div>
-					</a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu_div" id="toggle-btn">
-		    			<span class="navbar-toggler-icon"></span>
-		  			</button>
-		  			<div class="collapse navbar-collapse text-center justify-content-between" id="nav-menu_div">
-		  				<!-- <div class="row ml-aut "> -->
-		  					<div class="col-lg-9 ml-lg-auto">
-		  						<ul class="navbar-nav justify-content-around">
-				  					<li class="nav-item  active ">
-				  						<a class="nav-link" href="./index.html"><strong>HOME</strong></a>
-				  					</li>
-				  					<li class="nav-item px-lg-3">
-				  						<a class="nav-link" href="./creators.html"><strong>CREATORS</strong></a>
-				  					</li>
-				  					<li class="nav-item ">
-				  						<a class="nav-link" href="./music.html"><strong>MUSIC</strong></a>
-				  					</li>
-				  					<li class="nav-item px-lg-3">
-				  						<a class="nav-link" href="./performances.html"><strong>PERFORMANCES</strong></a>
-				  					</li>
-				  					<li class="nav-item pr-lg-3">
-				  						<a class="nav-link" href="./links.html"><strong>LINKS</strong></a>
-				  					</li>
-									<li class="nav-item ">
-										<a class="nav-link" href="mailto:music@nikaleonimusic.com"><strong>CONTACT</strong>
-										</a>
-									</li>
-				  				</ul>
-		  					</div>
-							<div class="col-auto mail-list-btn">
-								<a class="nav-link " href="./mailing_list.html">
-									<span class="content-box">MAILING LIST</span>
-								</a>
-							</div>
-		  				<!-- </div> -->
-		  				
-		  			</div>
-				</div>
-			</nav>
-		</header>
-		<main class="d-non">
-			<div class="container d-none">
-				<div class="header">
-				  	<div class="banner">
-				  		<img src="images/red2.jpg" align="center" alt="banner" width="961" height="174" />
-				  	</div>
-					<div class="title" align="left">
-						<p align="center">Flame and Shadow</p>
-					</div>
-					<div class="subtitle" align="left">
-					  <p align="center">The Passion and Pain of Sara Teasdale</p>
-					</div>
-				  	
-					 
-					<!--end of navcontainer1-->   
-					<div class="newsletter_button" style="filter:shadow(color: #929292);">
-						
-					</div>  
-					<!--end of newsletter_signup-->
-				</div> 
-				<!-- end .header -->
-					  
-				<div class="content">
-					<div class="page_title1">MUSIC</div><br><br><br><br>
-			      	<p align="center">
-		      			Flame and Shadow is a work in progress.  Music excerpts will be posted here as they get completed.
-			      	</p><br><br><br><br>
-			    </div>		
-		      	<div class="container-b " >
-					<div class="player-body row ">
-						<div class="col-5 col-sm-7 col-md-auto mx-md-auto bg-white rounded paper-box-shadow">
-							<div class="row pt-2 pb-3 bg- rounded-top title-div">
-								<marquee width="60%" scrollDelay="200"> 
-									<small class="track-title px-3">
-										Press Play
-									</small>
-								</marquee> 
-							</div>
-							<div class="row py-3">
-								<div class="col-auto d-flex align-items-center play-btn " >
-									<img class="tiny-svg " src="./assets/imgs/play.svg">
-								</div>
-								<div class="d-flex px-0 col align-items-center">
-									<small class="col-auto current-time px-2 px-sm-3">0:00</small>
-									<div class="col px-0 slider-container d-flex align-items-center">
-										<input class="audio-slider def-slider" type="range" min="0" max="100" value="0">
-									</div>
-									<small class="col-auto duration px-2 px-sm-3">0:00</small>
-								</div>
-								<div class="d-flex">
-									<div class="volume-btn col-auto d-flex align-items-center"  >
-										<img class="tiny-svg" src="./assets/imgs/volume.svg">
-									</div>
-									<div class="volume-slider-div px-2 align-items-center">
-										<input class="volume-slider def-slider" type="range" min="0" max="100" value="100">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-		        <div class="footer">
-					<p align="center">©2020 Nika Leoni</p>
-			    </div>
-			    <!-- end .footer -->
-				</p>
-					
-				</div><!-- end .content -->
-			</div>  <!-- end .container -->
-			<section>
-				<div class="container-fluid">
-					<div class="row m y-5">
-						<div class="col px-0 m y-5">
-							<header class="red-orange-gradient py-5 text-center text-white">
-								<h1 class="banner font-vivaldi">Flame and Shadow</h1>
-								<h3 class="banner font-trebuchet">The Passion and Pain of Sara Teasdale</h3>
-							</header>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
 		<script src="./js/jquery-3.5.1.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
 		<script src="./js/audio.js"></script>

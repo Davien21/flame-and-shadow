@@ -2,7 +2,6 @@ let slider_input = document.querySelector('input.audio-slider');
 let volume_div = document.querySelector('.volume-slider-div'); 
 let volume_input = document.querySelector('.volume-slider'); 
 let slider_container = document.querySelector('div.slider-container'); 
-let slider_body = document.querySelector('div.player-slider'); 
 
 let song_title = document.querySelector(".track-title");
 let play_btn = document.querySelector(".play-btn");
@@ -18,14 +17,22 @@ window.addEventListener('load', function () {
 	slider_input.value = 0;
 })
 isIE() ? handleIE() : handleOtherBrowser();
-
 function changeSlider () {
 	reset_counter === 0 ? playSong() : '';
 	let slider_value = slider_input.value;
 	let current_time = convertSliderValueToTime(slider_value);
 	setTime(current_time);
 }
-
+console.log(slider_input)
+console.log(volume_div)
+console.log(volume_input)
+console.log(slider_container)
+console.log(song_title)
+console.log(play_btn)
+console.log(volume_btn)
+console.log(current_time_span)
+console.log(duration_span)
+console.log(song)
 play_btn.addEventListener('click', playSong);
 function playSong () {
 	if (song.src === '') {
