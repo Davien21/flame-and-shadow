@@ -8,11 +8,11 @@ body {
 .player-body.no-responsive {
 	max-width: 320px !important;
 }
-.
+/*.
 main {
 	margin: 20% auto 5%;
 	position: relative;
-}
+}*/
 .title-div {
 	background-color: darkgray;
     background-color: antiquewhite;
@@ -71,7 +71,7 @@ main {
 	/*margin-top: -8px;*/
 	cursor: pointer;
 }
-@media screen and (max-width:399px) {
+/*@media screen and (max-width:399px) {
 	main {
 		width: 90%;
 	}
@@ -103,4 +103,4 @@ main {
 	main {
 		width: 25%;
 	}
-}
+}*/
