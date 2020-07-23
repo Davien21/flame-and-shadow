@@ -5,9 +5,10 @@ body {
 	/*background-color: #000;*/
 	/*background: linear-gradient(-65deg, #43C6AC, #F8FFAE);*/
 }
-.no-responsive {
-	width: 60%;
+.player-body.no-responsive {
+	max-width: 320px !important;
 }
+.
 main {
 	margin: 20% auto 5%;
 	position: relative;

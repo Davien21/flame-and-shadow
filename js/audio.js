@@ -11,7 +11,7 @@ let current_time_span = document.querySelector('.current-time')
 let duration_span = document.querySelector('.duration')
 
 let song = new Audio();
-song.src = './assets/audio/Ed Sheeran - Give Me Love.mp3';
+song.src = './audio/overture.mp3';
 song.controls = true;
 let reset_counter = 0;
 window.addEventListener('load', function () {
